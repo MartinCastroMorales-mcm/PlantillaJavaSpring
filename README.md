@@ -13,7 +13,10 @@ Configuracion de la base de datos no es persistente
 Tests con Cypress o JUnit
 
 ## Como funciona 
-TODO
+Correr aplicacion con
+
+mvn spring-boot:run -X  
+
 
 ## Fuentes
 Spring Security JWT: How to secure your Spring Boot REST APIs with JSON Web Tokens
