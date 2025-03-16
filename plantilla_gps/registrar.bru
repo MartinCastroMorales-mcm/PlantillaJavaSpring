@@ -1,0 +1,24 @@
+meta {
+  name: registrar
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/api/v1/auth/registrar
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiTWFzdGVyQWRtaW4iLCJleHAiOjE3NDIxNjg5MzgsImlhdCI6MTc0MjE2NTMzOCwic2NvcGUiOiIifQ.WUbh0xFdYOcv0RCeE2ol-y_fn4qCyWIP7krWVGawuMai6c5KpRaRqWoBGew-wmtTMzvxALyGprxi6Q0-smpeh7TktEapyf3awuEO_Fwq7De2ShW5mpD3jX6Rgm4ujGIFL3nUvhAnB4DDRpP6d6CYNvB5dQfxqT2u7aJTc-Jh4zfJNoNTD5dZuCNg-u3DzxfAPBwBGYH16nrWgZdYltn-9-G5VMnYFTqw98jSAlVUvqkV3MBL8mw6kqlCh2eGKzO0Yxw9MQezS-wVUyE-W0febUWmCQylOL9-hJVrhYaL8kwmK9PPYwyqT68dyipW0u97k-VRMyJIGnk87S_aHkLRJQ
+}
+
+body:json {
+  {
+    "nombre_usuario": "martinII",
+    "clave_usuario": "1234",
+    "correo_usuario": "martin@gmail.com",
+    "rol_usuario": 2
+  }
+}

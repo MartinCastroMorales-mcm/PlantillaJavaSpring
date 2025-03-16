@@ -5,12 +5,19 @@ meta {
 }
 
 post {
-  url: http://localhost:8080/api/v1/auth
-  body: none
+  url: http://localhost:8080/api/v1/auth/loguear
+  body: json
   auth: basic
 }
 
 auth:basic {
   username: dvega
   password: password
+}
+
+body:json {
+  {
+    "nombre_usuario": "MasterAdmin",
+    "clave_usuario": "admin1234"
+  }
 }
