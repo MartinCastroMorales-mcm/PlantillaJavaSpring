@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "plantilla_gps",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
