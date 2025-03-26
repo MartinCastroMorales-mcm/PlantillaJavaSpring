@@ -1,0 +1,24 @@
+meta {
+  name: addAlumno
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8080/api/v1/alumno
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiTWFzdGVyQWRtaW4iLCJleHAiOjE3NDMwMjQ0NDksImlhdCI6MTc0MzAyMDg0OSwic2NvcGUiOiIifQ.J7widkSJO6Exg0Cw5ifJJ64oPvnnoY7DAA1HWKVs_yFlhpG8b6F1l_OvD-Pq-fsVakopOQuqLrtGkD_a3KSeeQ9J2PWzgIOp2OaQQBC3UZu1W5qdIrAButRjQSWMUUipTF1-XTI4dOhD_d7Nzb5yoJb47FjZYF7LQnpLSVNKM8ih5v0-kgnncdiJKFxipK3yLeb4yENl34UoJILxv5JT0VXC2XUAMuE2q3-7Je3JvfPMGF-yj_Y58cSKVhvdxKbJm8rUWq0HgyUqQIivmKlUfehTCbfXyZ7Txf1DaHzMbmEMxxprQG3j-3pdTYXovOG3OC85G8tCHJkrwzNPQ2EMGA
+}
+
+body:json {
+  {
+    "rut_alumno": "20.941.502-K",
+    "nombre_completo_alumno": "MARTIN CASTRO MORALES",
+    "fecha_nacimiento_alumno":"2001-12-21",
+    "correo_alumno": "martin.castro2101@alumnos.ubiobio.cl"
+  }
+}

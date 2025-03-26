@@ -13,9 +13,16 @@ Configuracion de la base de datos no es persistente
 Tests con Cypress o JUnit
 
 ## Como funciona 
-Correr aplicacion con
+Correr aplicacion con maven usando
+(-X es para debug)
 
 mvn spring-boot:run -X  
+
+Tambien se puede usar 
+
+mvn test
+
+para correr los tests
 
 
 ## Fuentes

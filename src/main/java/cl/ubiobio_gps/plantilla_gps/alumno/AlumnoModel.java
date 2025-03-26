@@ -29,8 +29,8 @@ public class AlumnoModel {
     message = "El nombre solo puede contener letras y espacios")
     private String nombre_completo_alumno;
 
-    @Positive(message = "La edad debe ser un numero positivo")
     @Transient
+    //@Positive(message = "La edad debe ser un numero positivo")
     private int edad_alumno;
 
     @Past(message = "La fecha de nacimiento debe ser positiva")
@@ -66,6 +66,7 @@ public class AlumnoModel {
         return edad_alumno;
     }
     public void setEdad_alumno(int edad_alumno) {
+        //TODO crear edad basandose en la fecha de nacimiento
         this.edad_alumno = edad_alumno;
     }
     public LocalDate getFecha_nacimiento_alumno() {
